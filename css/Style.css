@@ -1,0 +1,224 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+/* --------------- General -------------------------- */
+.logo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-image: url(../images/LOGO.png);
+  background-size: cover;
+  margin-left: 10px;
+}
+.color1 {
+  background-color: rgb(252, 226, 216) !important;
+}
+.t-color1 {
+  color: rgb(252, 226, 216) !important ;
+}
+.btn {
+  --bs-btn-hover-bg: rgb(247, 207, 191);
+  --bs-btn-hover-color: black;
+  --bs-btn-active-bg: rgb(248, 196, 176);
+}
+.section {
+  height: 70px;
+}
+.section h1 {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: -webkit-linear-gradient(top, black, rgb(255, 202, 182), black);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* --------------- Form -------------------------- */
+.form-m {
+  margin: 10px;
+}
+.form-m p {
+  font-size: 14px;
+}
+/* --------------- Carousel -------------------------- */
+.carousel-caption {
+  background-color: rgba(252, 226, 216, 0.562);
+}
+.vh {
+  height: 100vh;
+}
+/* --------------- accordion -------------------------- */
+.accordion {
+  --bs-accordion-btn-focus-box-shadow: none;
+  --bs-accordion-active-bg: rgb(252, 226, 216);
+}
+/* --------------- Special order -------------------------- */
+.so-item {
+  margin: 40px;
+}
+/* --------------- Backgrounds -------------------------- */
+.background1 {
+  width: 100%;
+  height: 350px;
+  background-image: url(../images/Artboard\ 1.jpg);
+  background-attachment: fixed;
+}
+.background2 {
+  width: 100%;
+  height: 350px;
+  background-image: url(../images/BG2.jpg);
+  background-attachment: fixed;
+}
+/* --------------- Team -------------------------- */
+.team-card {
+  position: relative;
+  height: 450px;
+  width: 400px;
+  background-image: url(../images/p-img.jpg);
+  background-size: cover;
+  border-radius: 7px;
+  transition: 0.4s;
+}
+.team-overlay {
+  position: absolute;
+  background-color: rgba(90, 90, 90, 0.7);
+  border-radius: 7px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: 0.4s;
+}
+.team-info {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  margin: 15px;
+}
+.team-info i {
+  float: left;
+  margin-right: 10px;
+}
+.team-info img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 1px solid black;
+  margin-top: 120px;
+}
+.team-p {
+  margin-top: -7px;
+  font-size: 14px;
+}
+.team-card:hover {
+  transform: scale(0.9);
+}
+.team-card:hover .team-overlay {
+  background-color: rgba(248, 198, 176, 0.527);
+}
+/* --------------- Highlights -------------------------- */
+.effect::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 0%;
+  width: 0%;
+  background-color: rgba(248, 198, 176, 0.26);
+  transition: 0.4s;
+}
+.effect:hover:before {
+  top: 100;
+  left: 100;
+  width: 100%;
+  height: 100%;
+}
+.effect::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  right: 0;
+  height: 0%;
+  width: 0%;
+  background-color: rgba(248, 198, 176, 0.26);
+  transition: 0.4s;
+}
+.effect:hover:after {
+  bottom: 100;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+/* --------------- News -------------------------- */
+.n-shape {
+  height: 7px;
+  width: 150px;
+  background-color: rgb(252, 226, 216);
+  border-radius: 7px;
+  margin-bottom: 10px;
+}
+.n-img1 {
+  clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
+  height: 100%;
+}
+.n-img2 {
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 10% 100%);
+  height: 100%;
+}
+/* --------------- Media Query -------------------------- */
+.o1 {
+  order: 1;
+}
+
+@media (max-width: 767px) {
+  .o1 {
+    order: 0;
+  }
+  .n-img1 {
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+  }
+
+  .n-img2 {
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+  }
+}
+/* --------------- Join Us -------------------------- */
+.insta {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 70px;
+}
+/* --------------- Footer -------------------------- */
+.footer {
+  width: 100%;
+  height: 400px;
+  background-color: rgb(255, 202, 182);
+}
+/* --------------- Social Icons -------------------------- */
+.icons-holder {
+  position: absolute;
+  position: fixed;
+  text-align: center;
+  z-index: 5;
+  right: 20px;
+  top: 275px;
+  width: 100px;
+  height: 450px;
+}
+.social-btn {
+  transform: scale(1);
+  transition: 0.3s;
+}
+.social-btn:hover {
+  transform: scale(0.8);
+}
